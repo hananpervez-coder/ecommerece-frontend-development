@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List View</title>
+
+    <!-- Linking css file for styling of home body elements -->
+    <link rel="stylesheet" href="../css/shared.css">
+
+    <!-- Link of css file styling header, footer and news Letter section  -->
+    <link rel="stylesheet" href="../css/header_footer_newsletter.css">
+
+    <!-- Linking boxIcon css file to use icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Linking fontAwesome css file to use icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="Primar_Header">
+            <div class="logo">
+                <i class='bx bx-shopping-bag'></i>
+                <p>Brand</p>
+            </div>
+
+
+            <form action="">
+                <input type="search" placeholder="Search">
+
+                <select name="" id="">
+                    <option value="">All Catagories</option>
+                    <option value="">Clothes</option>
+                    <option value="">Home Appliances</option>
+                    <option value="">Electronics</option>
+                    <option value="">All Catagories</option>
+                </select>
+                <button>Search</button>
+
+            </form>
+
+            <nav>
+                <a class="Profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a class="Message">
+                    <i class="fas fa-message"></i>
+                    <span>Message</span>
+                </a>
+                <a class="Order">
+                    <i class="fas fa-box-open"></i>
+                    <span>Order</span>
+                </a>
+                <a class="My_Cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>My Cart</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="Secondary_Header">
+            <div class="Left_Nav">
+                <a href="#">
+
+                    <i class="fas fa-bars"></i>
+                    <span>All Catagory</span>
+                </a>
+                <a href="#">
+                    <span>Hot Offers</span>
+                </a>
+                <a href="#">
+                    <span>Gift Boxes</span>
+                </a>
+                <a href="#">
+                    <span>Projects</span>
+                </a>
+                <a href="#">
+                    <span>Menu Items</span>
+                </a>
+
+                <select name="" id="">
+                    <Option>Help</Option>
+                </select>
+            </div>
+
+            <div class="Country_Lang">
+                <select name="Language" id="Language">
+                    <option value="">Lang,Currency</option>
+                    <option value="">English,USD</option>
+                    <option value="">Urdu , PKR</option>
+                    <option value="">English,Pond</option>
+
+                </select>
+
+                <select name="Country" id="Country">
+                    <option value="">Pakistan</option>
+                    <option value="">India</option>
+                    <option value=""><i class="fi fi-us"></i></option>
+                    <option value="">England</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    </div>
+    <div class="Navigation">
+        <p>Home</p>
+        <p><i class='bx bxs-chevron-right'></i></p>
+        <p>Clothings</p>
+        <p><i class='bx bxs-chevron-right'></i></p>
+        <p>Men's wear</p>
+        <p><i class='bx bxs-chevron-right'></i></p>
+        <p>Summer Clothing</p>
+
+    </div>
+
+    <!-- Body of page -->
+    <main>
+
+        <form class="filter">
+
+            <hr>
+
+            <!-- Catagory selection filter -->
+            <div class="catagories" onclick="">
+                <div class="head" onclick="catagory_list.hidden^=1">
+                    <p>Catagory</p>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+
+                <div id="catagory_list" hidden>
+                    <a href="#" class="catagory">Mobile accessary</a>
+                    <a href="#" class="catagory">Electronics</a>
+                    <a href="#" class="catagory">Smartphones</a>
+                    <a href="#" class="catagory">Modern tech</a>
+                    <button href="#" class="catagory_all">See all</button>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Brand selection filter -->
+            <div class="brands" onclick="">
+                <div class="head" onclick="catagory_list.hidden^=1">
+                    <p>Brands</p>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+
+                <div id="brand_options">
+                    <div class="brand">
+                        <input type="checkbox" id="brand_1">
+                        <label for="brand_1">Samsung</label>
+                    </div>
+
+                    <div class="brand">
+                        <input type="checkbox" id="brand_2">
+                        <label for="brand_2">Apple</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox" id="brand_3">
+                        <label for="brand_3">Huawei</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox" id="brand_4">
+                        <label for="brand_4">Pocco</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox" id="brand_5">
+                        <label for="brand_5">Lenovo</label>
+                    </div>
+
+                    <button href="#" class="catagory_all">See all</button>
+
+                </div>
+
+            </div>
+
+            <hr>
+            <!-- Feature selection filter -->
+            <div class="features" onclick="">
+                <div class="head" onclick="catagory_list.hidden^=1">
+                    <p>Features</p>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+
+                <div id="options">
+                    <div class="feature">
+                        <input type="checkbox" id="feature_1">
+                        <label for="feature_1">Metalic</label>
+                    </div>
+
+                    <div class="feature">
+                        <input type="checkbox" id="feature_2">
+                        <label for="feature_2">Plastic cover</label>
+                    </div>
+                    <div class="feature">
+                        <input type="checkbox" id="feature_3">
+                        <label for="feature_3">8GB Ram</label>
+                    </div>
+                    <div class="feature">
+                        <input type="checkbox" id="feature_4">
+                        <label for="feature_4">Super power</label>
+                    </div>
+                    <div class="feature">
+                        <input type="checkbox" id="feature_5">
+                        <label for="feature_5">Large Memory</label>
+                    </div>
+
+                    <button href="#" class="catagory_all">See all</button>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Price range selection filter -->
+            <div class="price_range">
+                <div class="head" onclick="catagory_list.hidden^=1">
+                    <p>Price range</p>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+
+                <div class="range">
+                    <input type="range">
+
+                    <div class="min_max">
+
+                        <div class="min">
+                            <p>Min</p>
+                            <input type="number" placeholder="0">
+                        </div>
+
+                        <div class="max">
+                            <p>Max</p>
+                            <input type="number" placeholder="999999">
+                        </div>
+                    </div>
+                    <button>Apply</button>
+                </div>
+
+            </div>
+
+            <hr>
+            <!-- Condition selection -->
+            <div class="condition">
+                <div class="head" onclick="catagory_list.hidden^=1">
+                    <p>Features</p>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+
+                <div id="options">
+                    <div class="cond">
+                        <input type="radio" id="condition_1">
+                        <label for="condition_1">Any</label>
+                    </div>
+                    <div class="cond">
+                        <input type="radio" id="condition_2">
+                        <label for="condition_2">Refurbished</label>
+                    </div>
+                    <div class="cond">
+                        <input type="radio" id="condition_3">
+                        <label for="condition_3">Brand new</label>
+                    </div>
+                    <div class="cond">
+                        <input type="radio" id="condition_4">
+                        <label for="condition_4">Old items</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Rating selection -->
+            <div class="rating">
+                <div class="head" onclick="catagory_list.hidden^=1">
+                    <p>Rating</p>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+
+                <div id="options">
+                    <div class="rate">
+                        <input type="checkbox" name="" id="rate_1">
+                        <label for="rate_1"><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                class='bx bxs-star fill'></i></label>
+                    </div>
+                    <div class="rate">
+                        <input type="checkbox" name="" id="rate_2">
+                        <label for="rate_2"><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                class='bx bxs-star unfill'></i></label>
+                    </div>
+                    <div class="rate">
+                        <input type="checkbox" name="" id="rate_3">
+                        <label for="rate_3"><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                class='bx bxs-star fill'></i><i class='bx bxs-star unfill'></i><i
+                                class='bx bxs-star unfill'></i></label>
+                    </div>
+                    <div class="rate">
+                        <input type="checkbox" name="" id="rate_4">
+                        <label for="rate_4"><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                class='bx bxs-star unfill'></i><i class='bx bxs-star unfill'></i><i
+                                class='bx bxs-star unfill'></i></label>
+                    </div>
+                    <div class="rate">
+                        <input type="checkbox" name="" id="rate_5">
+                        <label for="rate_5"><i class='bx bxs-star fill'></i><i class='bx bxs-star unfill'></i><i
+                                class='bx bxs-star unfill'></i><i class='bx bxs-star unfill'></i><i
+                                class='bx bxs-star unfill'></i></label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="Selector_Items">
+
+            <!-- selector/naigator for switching into list view or grid view -->
+            <div class="Selector">
+                <p>12,911 items in <strong>Mobile accessory</strong></p>
+
+                <div class="selection">
+                    <form action="">
+                        <div>
+                            <input type="checkbox" id="check11">
+                            <label for="check11">Verified only</label>
+                        </div>
+
+                        <select name="" id="">
+                            <option value="">Features</option>
+                            <option value="">Matalic</option>
+                            <option value="">8Gb Ram</option>
+                        </select>
+                    </form>
+
+                    <div class="view_button">
+                        <a href="../HTML files/GridView.html" target="_blank">
+                            <button><i class='bx bxs-grid-alt'></i></button>
+                        </a>
+                        <a href="../HTML files/ListView.html"  target="_blank">
+                            <button><i class='bx bx-list-ul'></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product boxes -->
+
+            <div class="items">
+
+                <div class="item">
+                    <div class="imagebox">
+                        <img src="../assets/list_items/1.png" alt="product image">
+                    </div>
+
+                    <div class="detail">
+                        <p class="item_name">Canon Camera EOS 2000, Black 10x zoom</p>
+
+                        <div class="price_rating">
+                            <div class="price">
+                                <p class="new_price">$998.00</p>
+                                <p class="old_price">$1128.00</p>
+                            </div>
+                            <div class="rating_detail">
+                                <div class="rating">
+                                    <span><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star unfill'></i></span>
+                                    <span class="rate_num">7.5</span>
+                                </div>
+
+                                <div class="order">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>154 orders</span>
+                                </div>
+
+                                <div class="shipping">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>Free Shipping</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="text_line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore obcaecati sint mollitia ratione nostrum. Perspiciatis in ratione dicta dolores perferendis aspernatur esse dolorum laborum animi.</p>
+
+                        <a href="#"><button class="view_more">View details</button></a>
+                    </div>
+
+                    <div class="favoutr">
+                        <i class='bx bx-heart' ></i>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="imagebox">
+                        <img src="../assets/list_items/2.png" alt="product image">
+                    </div>
+
+                    <div class="detail">
+                        <p class="item_name">Canon Camera EOS 2000, Black 10x zoom</p>
+
+                        <div class="price_rating">
+                            <div class="price">
+                                <p class="new_price">$998.00</p>
+                                <p class="old_price">$1128.00</p>
+                            </div>
+                            <div class="rating_detail">
+                                <div class="rating">
+                                    <span><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star unfill'></i></span>
+                                    <span class="rate_num">7.5</span>
+                                </div>
+
+                                <div class="order">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>154 orders</span>
+                                </div>
+
+                                <div class="shipping">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>Free Shipping</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="text_line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore obcaecati sint mollitia ratione nostrum. Perspiciatis in ratione dicta dolores perferendis aspernatur esse dolorum laborum animi.</p>
+
+                        <a href="#"><button class="view_more">View details</button></a>
+                    </div>
+
+                    <div class="favoutr">
+                        <i class='bx bx-heart' ></i>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="imagebox">
+                        <img src="../assets/list_items/3.png" alt="product image">
+                    </div>
+
+                    <div class="detail">
+                        <p class="item_name">Canon Camera EOS 2000, Black 10x zoom</p>
+
+                        <div class="price_rating">
+                            <div class="price">
+                                <p class="new_price">$998.00</p>
+                                <p class="old_price">$1128.00</p>
+                            </div>
+                            <div class="rating_detail">
+                                <div class="rating">
+                                    <span><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star unfill'></i></span>
+                                    <span class="rate_num">7.5</span>
+                                </div>
+
+                                <div class="order">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>154 orders</span>
+                                </div>
+
+                                <div class="shipping">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>Free Shipping</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="text_line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore obcaecati sint mollitia ratione nostrum. Perspiciatis in ratione dicta dolores perferendis aspernatur esse dolorum laborum animi.</p>
+
+                        <a href="#"><button class="view_more">View details</button></a>
+                    </div>
+
+                    <div class="favoutr">
+                        <i class='bx bx-heart' ></i>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="imagebox">
+                        <img src="../assets/list_items/4.png" alt="product image">
+                    </div>
+
+                    <div class="detail">
+                        <p class="item_name">Canon Camera EOS 2000, Black 10x zoom</p>
+
+                        <div class="price_rating">
+                            <div class="price">
+                                <p class="new_price">$998.00</p>
+                                <p class="old_price">$1128.00</p>
+                            </div>
+                            <div class="rating_detail">
+                                <div class="rating">
+                                    <span><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star unfill'></i></span>
+                                    <span class="rate_num">7.5</span>
+                                </div>
+
+                                <div class="order">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>154 orders</span>
+                                </div>
+
+                                <div class="shipping">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>Free Shipping</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="text_line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore obcaecati sint mollitia ratione nostrum. Perspiciatis in ratione dicta dolores perferendis aspernatur esse dolorum laborum animi.</p>
+
+                        <a href="#"><button class="view_more">View details</button></a>
+                    </div>
+
+                    <div class="favoutr">
+                        <i class='bx bx-heart' ></i>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="imagebox">
+                        <img src="../assets/list_items/5.png" alt="product image">
+                    </div>
+
+                    <div class="detail">
+                        <p class="item_name">Canon Camera EOS 2000, Black 10x zoom</p>
+
+                        <div class="price_rating">
+                            <div class="price">
+                                <p class="new_price">$998.00</p>
+                                <p class="old_price">$1128.00</p>
+                            </div>
+                            <div class="rating_detail">
+                                <div class="rating">
+                                    <span><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star unfill'></i></span>
+                                    <span class="rate_num">7.5</span>
+                                </div>
+
+                                <div class="order">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>154 orders</span>
+                                </div>
+
+                                <div class="shipping">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>Free Shipping</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="text_line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore obcaecati sint mollitia ratione nostrum. Perspiciatis in ratione dicta dolores perferendis aspernatur esse dolorum laborum animi.</p>
+
+                        <a href="#"><button class="view_more">View details</button></a>
+                    </div>
+
+                    <div class="favoutr">
+                        <i class='bx bx-heart' ></i>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="imagebox">
+                        <img src="../assets/list_items/6.png" alt="product image">
+                    </div>
+
+                    <div class="detail">
+                        <p class="item_name">Canon Camera EOS 2000, Black 10x zoom</p>
+
+                        <div class="price_rating">
+                            <div class="price">
+                                <p class="new_price">$998.00</p>
+                                <p class="old_price">$1128.00</p>
+                            </div>
+                            <div class="rating_detail">
+                                <div class="rating">
+                                    <span><i class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star fill'></i><i class='bx bxs-star fill'></i><i
+                                    class='bx bxs-star unfill'></i></span>
+                                    <span class="rate_num">7.5</span>
+                                </div>
+
+                                <div class="order">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>154 orders</span>
+                                </div>
+
+                                <div class="shipping">
+                                    <i class='bx bxs-circle dot' ></i>
+                                    <span>Free Shipping</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="text_line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore obcaecati sint mollitia ratione nostrum. Perspiciatis in ratione dicta dolores perferendis aspernatur esse dolorum laborum animi.</p>
+
+                        <a href="#"><button class="view_more">View details</button></a>
+                    </div>
+
+                    <div class="favoutr">
+                        <i class='bx bx-heart' ></i>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- page navigator and item number displayed -->
+
+            <div class="page_item-number">
+
+                <form action="">
+                    <div class="item_number">
+                        <select name="" id="">
+                            <option value="">Show 10</option>
+                            <option value="">Show 20</option>
+                            <option value="">Show 30</option>
+                            <option value="">Show 40</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="page">
+                    <button id="backward"><i class='bx bx-chevron-left'></i></button>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <button id="forward"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- section for adding email for news -->
+        <section class="NewsLetter">
+            <div>
+                <h2>Subscribe on our newsletter</h2>
+                <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+            </div>
+
+            <form action="">
+                <input type="email" placeholder="&#xf0e0; Email">
+                <button>Subscribe</button>
+            </form>
+        </section>
+
+        <div id="footer1">
+            <div class="logo_social">
+                <div class="logo">
+                    <i class='bx bx-shopping-bag'></i>
+                    <p>Brand</p>
+                </div>
+
+                <p class="line">Best information about the company gives here</p>
+
+                <div class="social">
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-youtube'></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="About">
+                <h4>About</h4>
+                <div class="AboutLink">
+                    <a href="#">About Us</a>
+                    <a href="#">Find store</a>
+                    <a href="#">Catagories</a>
+                    <a href="#">Blogs</a>
+                </div>
+            </div>
+
+            <div class="Partnership">
+                <h4>Partnership</h4>
+                <div class="PartnershipLink">
+                    <a href="#">About Us</a>
+                    <a href="#">Find store</a>
+                    <a href="#">Catagories</a>
+                    <a href="#">Blogs</a>
+                </div>
+            </div>
+
+            <div class="Information">
+                <h4>Information</h4>
+                <div class="InformationLink">
+                    <a href="#">Help center</a>
+                    <a href="#">Money refund</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+
+            <div class="For_users">
+                <h4>For users</h4>
+                <div class="For_usersLink">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Settings</a>
+                    <a href="#">My Orders</a>
+                </div>
+            </div>
+
+            <div class="AppLink">
+                <h4>Get app</h4>
+                <div class="AppStores">
+                    <div class="AppleStore">
+                        <div class="logo">
+                            <i class='bx bxl-apple'></i>
+                        </div>
+                        <div class="name">
+                            <span>Download on the</span>
+                            <span>Apple Store</span>
+                        </div>
+                    </div>
+
+                    <div class="PlayStore">
+                        <div class="logo">
+                            <i class='bx bxl-play-store'></i>
+                        </div>
+                        <div class="name">
+                            <span>GET IT ON</span>
+                            <span>Google Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer2">
+            <div class="c">
+                <p>&copy; 2023 Ecommerce</p>
+            </div>
+            <div class="lang">
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">Urdu</option>
+                    <option value="">Persian</option>
+                </select>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

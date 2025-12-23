@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+US+Trad+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Share+Tech&display=swap');
+
+/* header styling */
+header {
+    background-color: white;
+
+}
+
+.Primar_Header {
+    border-bottom: 1px solid rgb(199, 196, 196);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.2rem 1rem 1.4rem 1rem;
+}
+
+.Primar_Header .logo,
+footer .logo_social .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Primar_Header .logo i,
+footer .logo_social .logo i {
+    font-size: 2rem;
+    padding: 5px;
+    background-color: #1D63FF;
+    color: white;
+    border-radius: 5px;
+}
+
+.Primar_Header .logo p,
+footer .logo_social .logo p {
+    padding-left: 5px;
+    color: #4c82f7;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header form {
+    display: grid;
+    grid-template-columns: 3fr 1fr 0.6fr;
+    height: 45px;
+}
+
+.Primar_Header form input,
+select {
+    padding: 0 5px;
+    border: 2px solid #1D63FF;
+    border-collapse: collapse;
+}
+
+.Primar_Header form input {
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.Primar_Header form select {
+    font-weight: 600;
+    color: rgb(44, 43, 43);
+    border: 2px solid #1D63FF;
+    border-left: 1px solid #1D63FF;
+
+}
+
+.Primar_Header form button {
+    background-color: #1D63FF;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 30px;
+    border-radius: 0 8px 8px 0;
+}
+
+
+.Primar_Header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.Primar_Header nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+}
+
+.Primar_Header nav a i {
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.Primar_Header nav a span {
+    color: grey;
+    font-size: 14px;
+}
+
+.Secondary_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 6.5rem 1.4rem 6.5rem;
+    border-bottom: 1px solid rgb(199, 196, 196);
+}
+
+.Secondary_Header .Left_Nav {
+    display: flex;
+    gap: 20px;
+
+}
+
+.Secondary_Header .Left_Nav a {
+    color: rgb(70, 69, 69);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.Secondary_Header .Left_Nav a i {
+    font-size: 17px;
+    padding-right: 5px;
+
+}
+
+.Secondary_Header .Left_Nav select {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(70, 69, 69);
+
+}
+
+.Secondary_Header .Left_Nav a span {
+    font-weight: 600;
+
+
+}
+
+.Secondary_Header .Country_Lang {
+    display: flex;
+    gap: 25px;
+
+}
+
+.Secondary_Header .Country_Lang #Language,
+#Country {
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(70, 69, 69);
+}
+
+/*                 NewsLetter section styling      */
+.NewsLetter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: rgb(221, 224, 226);
+    padding: 2.5rem;
+}
+
+.NewsLetter div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewsLetter div h2{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.NewsLetter div p{
+    font-size: 1.2rem;
+    color: rgb(119, 118, 118);
+}
+
+.NewsLetter form input::placeholder {
+    font-family: "Poppins", "Font Awesome 6 Free";
+    font-weight: 400;   /* Fixes text weight */
+}
+
+.NewsLetter form input {
+    border: none;
+    padding: 0.7rem;
+    border-radius: 6px;
+    width: 19rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.NewsLetter form button{
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    margin-left: 0.3rem;
+    color: white;
+    background:linear-gradient(rgba(18, 127, 255, 1),rgba(0, 103, 255, 1));
+    font-size: 1rem;
+}
+
+/*                                      footer styling                                     */
+#footer1 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.6fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr;
+    gap: 1.5rem;
+    padding: 3rem 8rem;
+}
+
+
+#footer1 .logo_social {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+#footer1 .logo_social .line {
+    font-size: 18px;
+    color: rgb(68, 67, 67);
+}
+
+#footer1 .logo_social .social {
+    display: flex;
+    gap: 10px;
+}
+
+#footer1 .logo_social .social a i {
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 5px;
+}
+
+#footer1 .About h4,
+#footer1 .Partnership h4,
+#footer1 .Information h4,
+#footer1 .For_users h4,
+#footer1 .AppLink h4 {
+    margin-bottom: 15px;
+}
+
+#footer1 .About .AboutLink,
+#footer1 .Partnership .PartnershipLink,
+#footer1 .Information .InformationLink,
+#footer1 .For_users .For_usersLink {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footer1 .About .AboutLink a,
+#footer1 .Partnership .PartnershipLink a,
+#footer1 .Information .InformationLink a,
+#footer1 .For_users .For_usersLink a {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+}
+
+.AppStores {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.AppleStore,
+.PlayStore {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px 8px 8px;
+    width: fit-content;
+}
+
+.AppleStore .logo,
+.PlayStore .logo {
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
+    font-size: 30px;
+}
+
+.AppleStore .name,
+.PlayStore .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.AppleStore .name span:nth-child(1),
+.PlayStore .name span:nth-child(1) {
+    font-size: 9px;
+    font-weight: lighter;
+}
+
+.AppleStore .name span:nth-child(2),
+.PlayStore .name span:nth-child(2) {
+    font-size: 16px;
+}
+
+#footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 8rem;
+    background:rgb(221, 224, 226);
+}
+
+#footer2 .c p {
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+}
+
+#footer2 .lang select {
+    border: none;
+    background-color: unset;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+}
